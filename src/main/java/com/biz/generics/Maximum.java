@@ -1,7 +1,15 @@
 package com.biz.generics;
 
-public class Maximum{
+public class Maximum<E extends Comparable>{
+    E value1;
+    E value2;
+    E value3;
 
+    public Maximum(E value1, E value2, E value3) {
+        this.value1 = value1;
+        this.value2 = value2;
+        this.value3 = value3;
+    }
 
     public static  <E extends Comparable> E getMaximum(E a, E b, E c){
         E max=a;
