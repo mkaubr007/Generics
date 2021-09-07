@@ -5,9 +5,10 @@ import org.junit.Test;
 
 public class MaximumTest {
     @Test
-    public void checkMaximumInteger(){
-        int actualResult=Maximum.getMaximum(3,2,1);
-        Assert.assertEquals(3,actualResult);
+    public void checkMaximumFloat(){
+        float actualResult=Maximum.getMaximum(3.1f,2.1f,1.1f);
+        Assert.assertEquals(3.1f,actualResult,0.0);
     }
+
 }
 

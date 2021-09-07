@@ -2,11 +2,11 @@ package com.biz.generics;
 
 public class Maximum{
     public static void main(String[] args) {
-        Integer a=3,b=2,c=1;
+        Float a=3.1f,b=2.1f,c=1.1f;
         System.out.println(getMaximum(a,b,c));
     }
-    public static Integer getMaximum(Integer a,Integer b,Integer c){
-        Integer max=a;
+    public static Float getMaximum(Float a,Float b,Float c){
+        Float max=a;
         if(b.compareTo(a)>0 && b.compareTo(a)>0){
             max=b;
         }else if(c.compareTo(max)>0){
